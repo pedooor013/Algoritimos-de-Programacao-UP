@@ -5,8 +5,11 @@ int main(){
 
     int firstNum, secondNum, sumNum, mutiplyNum;
     
-    firstNum = 10;
-    secondNum = 20;
+    printf("Digite o primeiro numero: \n");
+    scanf("%d", &firstNum);
+    
+    printf("Digite o segundo numero: \n");
+    scanf("%d", &secondNum);
     
     sumNum = firstNum + secondNum;
     mutiplyNum = firstNum * secondNum;
@@ -35,7 +38,7 @@ int main(){
     printf("%d + %d = %d\n", firstNum, secondNum, sumNum);
     printf("%d * %d = %d\n", firstNum, secondNum, mutiplyNum);
     printf("%d - %d = %d\n", firstNum, secondNum, lessNum);
-    printf("%d / %d = %.2f\n", firstNum, secondNum, divisionNum);
+    printf("%d / %d = %.3f\n", firstNum, secondNum, divisionNum);
     
     printf("\n===========================================================\n");
     
@@ -45,13 +48,28 @@ int main(){
     printf("%d + %d = %d\n", firstNum, secondNum, sumNum);
     printf("%d * %d = %d\n", firstNum, secondNum, mutiplyNum);
     printf("%d - %d = %d\n", firstNum, secondNum, lessNum);
-    printf("%d / %d = %.2f\n", firstNum, secondNum, divisionNum);
+    printf("%d / %d = %.3f\n", firstNum, secondNum, divisionNum);
     
     printf("\n===========================================================\n");
     
     printf("===Quarta Versao===\n");
     
-    printf("%d + %d = %d \n %d X %d = %d \n %d - %d = %d \n %d / %d = %.2f", firstNum, secondNum, sumNum, firstNum, secondNum, mutiplyNum, firstNum, secondNum, lessNum, firstNum, secondNum, divisionNum);
+    printf("%d + %d = %d \n %d X %d = %d \n %d - %d = %d \n %d / %d = %.3f", firstNum, secondNum, sumNum, firstNum, secondNum, mutiplyNum, firstNum, secondNum, lessNum, firstNum, secondNum, divisionNum);
+
+    printf("\n===========================================================\n");
+    
+    printf("===Quinta Versao===\n");
+    
+    float squatFirstNum = (float)firstNum*firstNum;
+    float cubeSecondNum = (float)secondNum*secondNum*secondNum; 
+
+    printf("%d + %d = %d \n %d X %d = %d \n %d - %d = %d \n %d / %d = %.3f \n %d ao quadrado = %.3f\n %d ao cubo = %.3f", 
+        firstNum, secondNum, sumNum,
+         firstNum, secondNum, mutiplyNum,
+          firstNum, secondNum, lessNum,
+           firstNum, secondNum, divisionNum,
+            firstNum, squatFirstNum
+            ,secondNum,cubeSecondNum);
 
     printf("\n===========================================================\n");
     
