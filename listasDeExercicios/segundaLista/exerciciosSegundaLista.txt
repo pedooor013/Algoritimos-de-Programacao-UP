@@ -9,22 +9,22 @@ VELOCIDADE. A partir do valor da distância, basta calcular a quantidade de litr
 viagem com a fórmula LITROS_USADOS := DISTANCIA/12. O programa deve apresentar os valores da
 velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade de litros utilizada na viagem.
 
-3. Efetuar o cálculo e apresentar o valor de uma prestação de um bem em atraso, utilizando a fórmula
+3. Efetuar o cálculo e apresentar o valor de uma prestação de um bem em atraso, utilizando a fórmula🟢
 PRESTAÇÃO:=VALOR + (VALOR*(TAXA/100)*TEMPO).
 
-4. Ler dois valores para as variáveis A e B e efetuar a troca dos valores de forma que a variável A passe a possuir
+4. Ler dois valores para as variáveis A e B e efetuar a troca dos valores de forma que a variável A passe a possuir🟢
 o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores após a efetivação
 do processamento da troca.
 
-5. Ler quatro valores numéricos inteiros e apresentar o resultado das adições e das multiplicações para a máxima
+5. Ler quatro valores numéricos inteiros e apresentar o resultado das adições e das multiplicações para a máxima🟢
 combinação possível entre as quatro variáveis. Considerando a leitura de valores para as variáveis A, B, C e D,
 devem ser feitas seis adições e seis multiplicações, ou seja, deve ser combinada a variável A com a variável B,
 a variável A com a variável C, a variável A com a variável D. Depois é necessário combinar a variável B com a
 variável C e a variável B com a variável D e, por fim, a variável C será combinada com a variável D.
 
-6. Efetuar a leitura de um valor numérico inteiro e apresentar o resultado do valor lido elevado ao quadrado.
+6. Efetuar a leitura de um valor numérico inteiro e apresentar o resultado do valor lido elevado ao quadrado.🟢
 
-7. Elaborar um programa que apresente o valor da conversão em real (R$) de um valor lido em dólar (US$). O
+7. Elaborar um programa que apresente o valor da conversão em real (R$) de um valor lido em dólar (US$). O🟢
 programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário.
 
 8. Elaborar um programa que leia o valor numérico correspondente ao salário mensal de um trabalhador e também
