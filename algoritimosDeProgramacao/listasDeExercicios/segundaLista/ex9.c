@@ -2,7 +2,7 @@
 
 int porcentagem(int numComparativo, int numTotal){
     float porcentagem;
-    porcentagem = (((float)numComparativo)/100)*numTotal;
+    porcentagem = (((float)numComparativo)/numTotal)*100;
     
     return(porcentagem);
 }
@@ -13,7 +13,7 @@ int main(){
 
     int votosTotal, votosNulos, votosBranco, votosACandidato, votosBCandidato, votosCCandidato;
     
-    float perceitualTotal, percentualA, percentualB, percentualC, percentualVotosBrancos, porcentagemVotosValidos, porcentagemVotosBranco, porcentagemVotosNulos;
+    float percentualA, percentualB, percentualC, porcentagemVotosValidos, porcentagemVotosBranco, porcentagemVotosNulos;
 
     printf("\nDigite quantos votos o candidato A teve: \n");
     scanf("%d", &votosACandidato);
@@ -32,24 +32,25 @@ int main(){
 
     votosTotal = votosACandidato + votosBCandidato + votosCCandidato + votosNulos + votosBranco;
 
-    int totalVotosValidos = votosACandidato, votosBCandidato, votosCCandidato;
+    int totalVotosValidos = votosACandidato + votosBCandidato + votosCCandidato;
 
-    porcentagemVotosValidos = porcentagem(totalVotosValidos, votosTotal); 
+    porcentagemVotosValidos = porcentagem(totalVotosValidos, votosTotal);
+    printf("\nDe %d candidatos %.3f%%, foram votos validos\n", votosTotal, porcentagemVotosValidos);
     
     percentualA = porcentagem(votosACandidato, votosTotal);
-    printf("\nDe %d  %%.2f foram votos para o candidato A\n", votosTotal, percentualA);
+    printf("\nDe %d candidatos %.3f%%, foram votos para o candidato A\n", votosTotal, percentualA);
     
     percentualB = porcentagem(votosBCandidato, votosTotal);
-    printf("\nDe %d  %%.2f foram votos para o candidato B\n", votosTotal, percentualB);
+    printf("\nDe %d candidatos %.3f%%, foram votos para o candidato B\n", votosTotal, percentualB);
     
     percentualC = porcentagem(votosCCandidato, votosTotal);
-    printf("\nDe %d %.2f% foram votos para o candidato C\n", votosTotal, percentualC);
+    printf("\nDe %d candidatos %.3f%%, foram votos para o candidato C\n", votosTotal, percentualC);
     
     porcentagemVotosNulos = porcentagem(votosNulos, votosTotal);
-    printf("\nDe %d %.2f% foram votos nulos\n", votosTotal, porcentagemVotosNulos);
+    printf("\nDe %d candidatos %.3f%%, foram votos nulos\n", votosTotal, porcentagemVotosNulos);
     
     porcentagemVotosBranco = porcentagem(votosBranco, votosTotal);
-    printf("\nDe %d %.2f% foram votos em branco\n", votosTotal, porcentagemVotosBranco);
+    printf("\nDe %d candidatos %.3f%%, foram votos em branco\n", votosTotal, porcentagemVotosBranco);
 
     return 0;
 }
