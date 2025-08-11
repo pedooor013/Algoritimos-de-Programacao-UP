@@ -30,7 +30,7 @@ programa deve solicitar o valor da cotação do dólar e também a quantidade de
 8. Elaborar um programa que leia o valor numérico correspondente ao salário mensal de um trabalhador e também🟢
 faça a leitura do valor do percentual de reajuste a ser atribuído. Apresentar o valor do novo salário.
 
-9. Em uma eleição sindical concorreram ao cargo de presidente três candidatos. Durante a apuração dos votos 
+9. Em uma eleição sindical concorreram ao cargo de presidente três candidatos. Durante a apuração dos votos 🟢
 foram computados votos nulos e em branco, além dos votos válidos para cada candidato. Deve ser criado um
 programa de computador que faça a leitura da quantidade de votos válidos para cada candidato, além ler
 também a quantidade de votos nulos e em branco. Ao final o programa deve apresentar o número total de
