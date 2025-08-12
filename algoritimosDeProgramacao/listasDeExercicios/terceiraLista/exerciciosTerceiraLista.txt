@@ -8,7 +8,7 @@ a primeira média aritmética. Se o valor da nova média for maior ou igual a se
 "Aprovado em exame"; caso contrário, apresentar a mensagem "Reprovado". Informar também, após a
 apresentação das mensagens, o valor da média obtida pelo aluno.
 
-3. Efetuar a leitura de três valores numéricos e processar o cálculo da equação completa de segundo grau,
+3. Efetuar a leitura de três valores numéricos e processar o cálculo da equação completa de segundo grau, 🟢
 utilizando a fórmula de Bhaskara (considerar para a solução do problema todas as possíveis condições para
 delta: delta < 0 - não há solução real, delta > 0 - há duas soluções reais e diferentes e delta = 0 - há apenas
 uma solução real). Lembre-se de que é completa a equação de segundo grau que possui todos os coeficientes
