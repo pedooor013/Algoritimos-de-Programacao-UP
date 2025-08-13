@@ -41,5 +41,5 @@ de eleitores; o percentual correspondente de votos válidos do candidato C em re
 o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último o percentual
 correspondente de votos em branco em relação à quantidade de eleitores.
 
-10. Elaborar um programa que leia dois valores numéricos reais desconhecidos. Calcular e apresentar os resultados
+10. Elaborar um programa que leia dois valores numéricos reais desconhecidos. Calcular e apresentar os resultados 🟢
 das quatro operações aritméticas básicas.

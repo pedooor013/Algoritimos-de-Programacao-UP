@@ -23,7 +23,7 @@ int main()
     if (media >= 6 && totalFaltas < 15){
         printf("\nVoce passou! Sua media eh %.1f\n", media);
     }
-    else{
+    else {
         if (media < 6 && totalFaltas < 15){
             printf("\nSua media foi de %.1f, por isso voce devera fazer a substutiva!\nDigite o valor da sua prova substutiva:\n", media);
             scanf("%f", &a3);
