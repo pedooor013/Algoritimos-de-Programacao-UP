@@ -19,11 +19,11 @@ delta.
 
 5. Fazer a leitura de 4 valores numéricos inteiros. Apresentar apenas os valores que sejam divisíveis por 2 e 3.🟢
 
-6. Ler cinco valores numéricos inteiros, identificar e apresentar o maior e o menor valores informados.
+6. Ler cinco valores numéricos inteiros, identificar e apresentar o maior e o menor valores informados.🟢
 
-7. Ler um valor numérico inteiro, apresentar uma mensagem informando se o valor fornecido é par ou ímpar.
+7. Ler um valor numérico inteiro, apresentar uma mensagem informando se o valor fornecido é par ou ímpar.🟢
 
-8. Efetuar a leitura de um valor numérico inteiro que esteja na faixa de valores de 1 até 9. O programa deve
+8. Efetuar a leitura de um valor numérico inteiro que esteja na faixa de valores de 1 até 9. O programa deve 🟢
 apresentar a mensagem "O valor está na faixa permitida", caso o valor informado esteja entre 1 e 9. Se o valor
 estiver fora da faixa, o programa deve apresentar a mensagem "O valor está fora da faixa permitida".
 

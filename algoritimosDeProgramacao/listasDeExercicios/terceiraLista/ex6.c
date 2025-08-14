@@ -39,7 +39,7 @@ int main(){
         maiorNum = num5;
     }if(num5<menorNum){
         menorNum = num5;
-    }2
+    }
     printf("\nO maior numero eh %d e o menor eh %d\n", maiorNum, menorNum);
     return 0;
 }
