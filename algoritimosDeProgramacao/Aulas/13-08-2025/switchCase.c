@@ -19,15 +19,11 @@ int main()
         printf("\nEscolha uma operacao para fazer com o numero escolhido: \n01) Verificar se eh par ou impar\n02) Encontrar o quadrado do numero\n03)Divisao entre 2 numeros\n\nResposta usuario: \n");
         scanf("%d", &escolhaUsuario);
 
-        switch (escolhaUsuario)
-        {
+        switch (escolhaUsuario){
         case 1:
-            if (numEscolhidoUsuario % 2 == 0)
-            {
+            if (numEscolhidoUsuario % 2 == 0){
                 printf("\n%d eh par!\n", numEscolhidoUsuario);
-            }
-            else
-            {
+            }else{
                 printf("\n%d eh impar!\n", numEscolhidoUsuario);
             }
             break;
