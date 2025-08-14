@@ -15,9 +15,9 @@ uma solução real). Lembre-se de que é completa a equação de segundo grau qu
 A, B e C diferentes de zero. O programa deve apresentar respostas para todas as condições estabelecidas para
 delta.
 
-4. Ler três valores inteiros e apresentar os valores lidos dispostos em ordem crescente.
+4. Ler três valores inteiros e apresentar os valores lidos dispostos em ordem crescente. 🟢
 
-5. Fazer a leitura de 4 valores numéricos inteiros. Apresentar apenas os valores que sejam divisíveis por 2 e 3.
+5. Fazer a leitura de 4 valores numéricos inteiros. Apresentar apenas os valores que sejam divisíveis por 2 e 3.🟢
 
 6. Ler cinco valores numéricos inteiros, identificar e apresentar o maior e o menor valores informados.
 
