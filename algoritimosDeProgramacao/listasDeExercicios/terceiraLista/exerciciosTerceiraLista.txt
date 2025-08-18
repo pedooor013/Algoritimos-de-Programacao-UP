@@ -36,7 +36,7 @@ deve apresentar a mensagem "Sexo informado inválido".
 10. Efetuar a leitura de três valores inteiros desconhecidos, somar os valores fornecidos e apresentar o resultado🟢
 somente se for maior ou igual a 100.
 
-11. Escreva um programa utilizando estruturas de múltipla escolha que imprima na tela o mês de acordo com o 
+11. Escreva um programa utilizando estruturas de múltipla escolha que imprima na tela o mês de acordo com o 🟢
 número digitado pelo usuário. Exemplo: Se escolhido 2 irá imprimir Fevereiro.
 
 12. Crie um algoritmo, utilizando estruturas de múltipla escolha, que imprima na tela o sexo (Masculino ou Feminino)
