@@ -27,16 +27,16 @@ delta.
 apresentar a mensagem "O valor está na faixa permitida", caso o valor informado esteja entre 1 e 9. Se o valor
 estiver fora da faixa, o programa deve apresentar a mensagem "O valor está fora da faixa permitida".
 
-9. Efetuar a leitura do sexo de uma pessoa e apresentar como saída uma das seguintes mensagens:
+9. Efetuar a leitura do sexo de uma pessoa e apresentar como saída uma das seguintes mensagens: 🟢
 "Excelentíssimo Senhor,", caso seja informado o sexo masculino, ou " Excelentíssimo Senhora", caso seja
 informado o sexo feminino. O programa deve, após a entrada do sexo, verificar primeiramente se o sexo
 fornecido é realmente válido, ou seja, se é igual a "M" ou a "F". Não sendo essa condição verdadeira, o programa
 deve apresentar a mensagem "Sexo informado inválido".
 
-10. Efetuar a leitura de três valores inteiros desconhecidos, somar os valores fornecidos e apresentar o resultado
+10. Efetuar a leitura de três valores inteiros desconhecidos, somar os valores fornecidos e apresentar o resultado🟢
 somente se for maior ou igual a 100.
 
-11. Escreva um programa utilizando estruturas de múltipla escolha que imprima na tela o mês de acordo com o
+11. Escreva um programa utilizando estruturas de múltipla escolha que imprima na tela o mês de acordo com o 
 número digitado pelo usuário. Exemplo: Se escolhido 2 irá imprimir Fevereiro.
 
 12. Crie um algoritmo, utilizando estruturas de múltipla escolha, que imprima na tela o sexo (Masculino ou Feminino)
