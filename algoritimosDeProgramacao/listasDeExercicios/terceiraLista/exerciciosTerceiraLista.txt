@@ -39,7 +39,7 @@ somente se for maior ou igual a 100.
 11. Escreva um programa utilizando estruturas de múltipla escolha que imprima na tela o mês de acordo com o 🟢
 número digitado pelo usuário. Exemplo: Se escolhido 2 irá imprimir Fevereiro.
 
-12. Crie um algoritmo, utilizando estruturas de múltipla escolha, que imprima na tela o sexo (Masculino ou Feminino)
+12. Crie um algoritmo, utilizando estruturas de múltipla escolha, que imprima na tela o sexo (Masculino ou Feminino) 🟢
 de uma pessoa. Utilize caracteres (M ou F) como entrada.
 
 13. As taxas de natalidade e mortalidade representam indicadores de desenvolvimento humano que analisam tanto
