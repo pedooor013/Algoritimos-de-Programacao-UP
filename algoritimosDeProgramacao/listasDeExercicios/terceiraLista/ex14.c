@@ -2,27 +2,14 @@
 
 int main(){
 
-    printf("\n===Mostra o Valor Somente se Maior que 100===\n");
-
-    int num1,num2,num3,result;
-
-    printf("\nDigite um numero: \n");
-    scanf("%d", &num1);
-
-    printf("\nDigite um numero: \n");
-    scanf("%d", &num2);
-
-    printf("\nDigite um numero: \n");
-    scanf("%d", &num3);
-
-    result = num1 + num2 + num3;
-
-    if(result >= 100){
-        printf("O valor da soma foi igual a %d", result);
-    }else{
-        printf("Deu certo!");
-    }
-
+    
 
     return 0;
 }
+
+/* 14. Uma escola fornece 5% de desconto para pagamento da mensalidade em dia. A escola ainda fornece, além 
+deste desconto, um desconto adicional de 50% na mensalidade para filhos de funcionários. Faça um programa
+que receba os dados de matrícula, valor da mensalidade e se o pagamento foi feito em dia ou não. Após isto
+calcule o programa deverá ler um código que identifique se o aluno é filho de funcionário (1) ou aluno comum
+(2) e com base nisso, utilize uma estrutura de múltipla escolha para calcular o valor a ser pago na mensalidade.
+ */
