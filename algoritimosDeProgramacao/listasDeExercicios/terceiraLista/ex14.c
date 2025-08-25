@@ -6,7 +6,7 @@ int main(){
 
     int pagamentoEmDia, filhoDeFuncionario; 
 
-    float vlrMensalidade, vlrMensalidadeDesconto;
+    float vlrMensalidade;
 
     printf("\nFilho de Funcionario (1-SIM; 2-NAO):\n");
     scanf("%d", &filhoDeFuncionario);
@@ -17,20 +17,18 @@ int main(){
     printf("\nDigite o valor da mensalidade:\n");
     scanf("%f", &vlrMensalidade);
     
-    vlrMensalidadeDesconto = vlrMensalidade;
-
     if(pagamentoEmDia == 1 || filhoDeFuncionario == 1){
-        if(pagamentoEmDia==1){
-            vlrMensalidadeDesconto = vlrMensalidade - ((5/100) * vlrMensalidade);
-            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidadeDesconto);
+        if(pagamentoEmDia == 1){
+            vlrMensalidade = vlrMensalidade - (0.05 * vlrMensalidade);
+            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidade);
         }
         if(filhoDeFuncionario == 1){
-            vlrMensalidadeDesconto = vlrMensalidadeDesconto - ((50/100) * vlrMensalidadeDesconto);
-            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidadeDesconto);
+            vlrMensalidade = vlrMensalidade - (0.5 * vlrMensalidade);
+            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidade);
         }
     }
 
-    printf("A sua mensalidade eh de R$%.2f", vlrMensalidadeDesconto);
+    printf("A sua mensalidade eh de R$%.2f", vlrMensalidade);
 
     return 0;
 }
