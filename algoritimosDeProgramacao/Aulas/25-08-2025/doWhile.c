@@ -2,15 +2,21 @@
 
 int main(){
 
-    int numUsuario;
-
+    int numUsuario, result; 
+    
     do{
         printf("\nDigite um numero: \n");
         scanf("%d", &numUsuario);
+        if(numUsuario<50 || numUsuario >150 ){
+            printf("\nValor invalido...\n");
+            numUsuario = 1;
+        }
+
+        result = numUsuario%5; 
 
 
-    }while (numUsuario!= 0);
+    }while (result != 0);
     
-    printf("Voce digitou 0 para parar o 'Do While'!");
+    printf("\nO numero %d eh um numero divisivel por 5!\n", numUsuario);
     return 0;
 }

@@ -19,12 +19,10 @@ int main(){
     
     if(pagamentoEmDia == 1 || filhoDeFuncionario == 1){
         if(pagamentoEmDia == 1){
-            vlrMensalidade = vlrMensalidade - (0.05 * vlrMensalidade);
-            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidade);
+            vlrMensalidade = vlrMensalidade - (0.054 * vlrMensalidade);
         }
         if(filhoDeFuncionario == 1){
             vlrMensalidade = vlrMensalidade - (0.5 * vlrMensalidade);
-            printf("\nEsse eh o valor atual da mensalidade ==> %.2f\n", vlrMensalidade);
         }
     }
 
