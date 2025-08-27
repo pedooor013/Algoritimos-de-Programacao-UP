@@ -7,18 +7,14 @@ int main(){
     num2 = 1;
     result = 0;
 
-    int i = 1;
-    while(i <= 15){
+    for(int i = 1; i<=15; i++){
 
-        printf("%d, ", num1);
-        result = num1 + num2;
-        num1 = num2;
-        num2 = result;
-
-        i++;
-    }
-
-
+    printf("%d, ", num1);
+    result = num1 + num2;
+    num1 = num2;
+    num2 = result;
+    
+}
     return 0;
 }
 
