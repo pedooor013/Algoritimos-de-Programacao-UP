@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 
 /*ler valores A, B e C
@@ -29,15 +30,24 @@ int main(){
     if(delta > 0){
         printf("\nTemos 2 resultado com o Delta maior que 0!\n");
         X = ((-B)-raizQuadradaDelta)/2*A;
+
         printf("\nO resultado caso seja subtraido eh igual a %.2f\n",X);
         X = ((-B)+raizQuadradaDelta)/2*A;
+
         printf("\nO resultado caso seja somado eh igual a %.2f\n",X);
+
     }if(delta == 0){
+    
         printf("\nTemos 1 resultado com o Delta igual a 0\n");
+        
         X = ((-B)+raizQuadradaDelta)/2*A;
+        
         printf("\nO resultado eh igual a %.2f\n", X);
+    
     }if(delta < 0){
+    
         printf("\nNao temos um resultado real com o Delta negativo\n");
+    
     }
 
 }
