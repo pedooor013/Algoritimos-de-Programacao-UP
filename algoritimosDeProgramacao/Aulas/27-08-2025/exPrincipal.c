@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
     //Objeto aluno
     struct Aluno{
         char turma;
         float media;
-        char statusAprovacao[15];
+        char statusAprovacao[19];
     };
 
 int main(){
@@ -25,6 +27,9 @@ int main(){
         scanf("%d", &qntAlunos);
 
         countAlunos = countAlunos + qntAlunos;
+
+        alunos = realloc(alunos, countAlunos * sizeof(struct Aluno));
+
 
         for(int count = 0; count < qntAlunos; count++){
 
@@ -53,7 +58,7 @@ int main(){
 
                 numBimestre++;
             }
-            mediaAluno = somaTotal/8;
+            mediaAluno = somaTotal/4;
             
             if(mediaAluno >= 6.75){
                 alunos[count].turma = nomeTurma;
@@ -78,7 +83,7 @@ int main(){
                     strcpy(alunos[count].statusAprovacao, "Reprovado!");
                     
                 }
-            }else{
+            }else if(mediaAluno<4){
             
                 alunos[count].turma = nomeTurma;
                 alunos[count].media = mediaAluno;
@@ -91,8 +96,8 @@ int main(){
 
     printf("\n===Lista de Alunos===\n");
     
-    for(int i = 0; i <= countAlunos; i++){
-        printf("Turma: %s; Media: %.2f; Aprovacao: %s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
+    for(int i = 0; i < countAlunos; i++){
+        printf("Turma: %c; Media: %.2f; Aprovacao: %29s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
     }
 
 
