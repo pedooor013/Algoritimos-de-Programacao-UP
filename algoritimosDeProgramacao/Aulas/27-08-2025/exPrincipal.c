@@ -1,87 +1,100 @@
 #include <stdio.h>
 
+    //Objeto aluno
+    struct Aluno{
+        char turma;
+        float media;
+        char statusAprovacao[15];
+    };
+
 int main(){
 
     char nomeTurma;
-    int qntAlunos, parar;
-    float notaProva, notaTrabalho, media, notaExame;
+    int qntAlunos, parar, numBimestre;
+    float notaProva, notaTrabalho, notaExame, somaTotal, mediaAluno; 
+    struct Aluno *alunos = NULL;
+    int countAlunos = 0; 
+    parar = 1;
     
-    
-    parar = 0;
-    //Loop para calculo por turma
-    while(parar != 1){
-
-        printf("\nDigite a letra da turma: \n");
+    while(parar != 0){
+        numBimestre = 1;
+        printf("\nDigite o nome da turma: \n");
         scanf("%s", &nomeTurma);
         
-        printf("\nDigite a quantidade de alunos contidos na turma: \n");
+        printf("\nDigite a quantidade de alunos: \n");
         scanf("%d", &qntAlunos);
 
-        //Loop para calcular a nota dos alunos da turma 
-        for(int count = 1; count <= qntAlunos; count ++){
-            
-            //Loop para calcular a nota dos bimestres 
-            for(int i = 1; i <= 4; i++){
-                
-                printf("\nDigite a nota da prova do aluno: \n");
+        countAlunos = countAlunos + qntAlunos;
+
+        for(int count = 0; count < qntAlunos; count++){
+
+            while(numBimestre <= 4){
+                printf("\nDigite a nota da prova do %d bimestre do aluno (0 a 8): \n", numBimestre);
                 scanf("%f", &notaProva);
-                while (notaProva < 0 || notaProva > 8){
+                
+                while(notaProva < 0 || notaProva > 8){
                     printf("\nValor invalido...\n");
-                    printf("\nDigite a nota da prova do aluno: \n");
+                    
+                    printf("\nDigite a nota da prova do %d bimestre do aluno (0 a 8): \n", numBimestre);
                     scanf("%f", &notaProva);
                 }
                 
-                printf("\nDigite a nota do trabalho do aluno: \n");
+                printf("\nDigite a nota do trabalho do %d bimestre do aluno (0 a 2): \n", numBimestre);
                 scanf("%f", &notaTrabalho);
                 
-                //Verificador de valores validos
-                /* if(notaProva > 8 || notaProva < 0){
+                while(notaTrabalho< 0 || notaTrabalho > 2){
+                    printf("\nValor invalido...\n");
+                    
+                    printf("\nDigite a nota do trabalho do %d bimestre do aluno (0 a 2): \n", numBimestre);
+                    scanf("%f", &notaTrabalho);
+                }
 
-                    do{
-                        printf("\nDigite a nota da prova do aluno: \n");
-                        scanf("%f", &notaProva);
+                somaTotal = somaTotal + notaTrabalho + notaProva;
 
-                        printf("\nDigite um valor valido...\n");
-                    }while(notaProva > 8 || notaProva < 0);
-
-                }else if(notaTrabalho > 2 || notaTrabalho < 0){
-                    do{
-                        printf("\nDigite a nota da prova do aluno: \n");
-                        scanf("%f", &notaTrabalho);
-
-                        printf("\nDigite um valor valido...\n");
-                    }while(notaTrabalho > 2 || notaTrabalho < 0);
-                } */
-                //calculo de média do bimestre
-                media = (notaProva+notaTrabalho)/2;
+                numBimestre++;
             }
-
-            //Arredondador
-            if(media >= 6.75){
-                printf("\nAprovado\n");
-
-            //Verifica se eh valido para fazer exame
-            }else if(media < 6.75 && media > 4){
-
-                printf("\nNecessario fazer um exame!\n");
-
+            mediaAluno = somaTotal/8;
+            
+            if(mediaAluno >= 6.75){
+                alunos[count].turma = nomeTurma;
+                alunos[count].media = mediaAluno;
+                strcpy(alunos[count].statusAprovacao, "Aprovado!");
+            }else if(mediaAluno > 4 && mediaAluno < 6.75){
+                
+                printf("\nNecessario fazer exame...\n");
                 printf("\nDigite a nota do exame: \n");
                 scanf("%f", &notaExame);
-
-                media = (media + notaExame) / 2;
-
-                //Verifica se passou por exame
-                if(media >= 5){
-                    printf("\nAprovado por conselho\n");
-                }else{
-                    printf("\nReprovado!\n");
+                mediaAluno = (mediaAluno + notaExame) / 2;
+                
+                if(mediaAluno >= 5){
+                    alunos[count].turma = nomeTurma;
+                    alunos[count].media = mediaAluno;
+                    strcpy(alunos[count].statusAprovacao, "Aprovado com exame!");
+                }
+                else{
+                
+                    alunos[count].turma = nomeTurma;
+                    alunos[count].media = mediaAluno;
+                    strcpy(alunos[count].statusAprovacao, "Reprovado!");
+                    
                 }
             }else{
-                printf("\nReprovado!\n");
-            }
-        }
-        printf("\nDeseja calcular as notas de outra turma (1- SIM; 2- NÃO): \n");
+            
+                alunos[count].turma = nomeTurma;
+                alunos[count].media = mediaAluno;
+                strcpy(alunos[count].statusAprovacao, "Reprovado!");
+            };
+        };
+        printf("\nDeseja calcular as notas de outras turmas (1-SIM, 2-NAO):\n");
+        scanf("%d", &parar);
+    };
+
+    printf("\n===Lista de Alunos===\n");
+    
+    for(int i = 0; i <= countAlunos; i++){
+        printf("Turma: %s; Media: %.2f; Aprovacao: %s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
     }
+
 
     return 0;
 }
