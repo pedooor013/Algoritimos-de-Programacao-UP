@@ -31,7 +31,7 @@ int main(){
         alunos = realloc(alunos, countAlunos * sizeof(struct Aluno));
 
 
-        for(int count = 1; count <= qntAlunos; count++){
+        for(int count = 0; count < qntAlunos; count++){
             printf("\n===Notas aluno===\n");
             //Calculo de notas dos 4 bimestres
             while(numBimestre <= 4){
@@ -48,7 +48,7 @@ int main(){
                 printf("\nDigite a nota do trabalho do %d bimestre do aluno (0 a 2): \n", numBimestre);
                 scanf("%f", &notaTrabalho);
                 
-                while(notaTrabalho< 0 || notaTrabalho > 2){
+                while(notaTrabalho < 0 || notaTrabalho > 2){
                     printf("\nValor invalido...\n");
                     
                     printf("\nDigite a nota do trabalho do %d bimestre do aluno (0 a 2): \n", numBimestre);
@@ -92,9 +92,12 @@ int main(){
                     alunos[count].media = mediaAluno;
                     strcpy(alunos[count].statusAprovacao, "Reprovado!");
                 };
-                numBimestre = 0;
+                numBimestre = 1;
                 mediaAluno = 0;
                 somaTotal = 0;
+                notaTrabalho = 0;
+                notaProva = 0;
+                notaExame = 0;
         };
         printf("\nDeseja calcular as notas de outras turmas (1-SIM, 2-NAO):\n");
         scanf("%d", &parar);
@@ -103,7 +106,7 @@ int main(){
     printf("\n===Lista de Alunos===\n");
     
     for(int i = 0; i < countAlunos; i++){
-        printf("Turma: %c; Media: %.2f; Aprovacao: %29s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
+        printf("Turma: %c; Media: %.2f; Aprovacao: %19s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
     }
 
 
