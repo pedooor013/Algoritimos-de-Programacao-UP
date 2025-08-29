@@ -26,7 +26,7 @@ variável que controla o contador do laço de repetição deve ser iniciada com 
 dez em dez graus, iniciando a contagem em dez graus Celsius e finalizando em cem graus Celsius. O
 programa deve apresentar os valores das duas temperaturas.
 
-8. Escrever um programa que calcule e apresente o somatório do número de grãos de trigo que se pode obter
+8. Escrever um programa que calcule e apresente o somatório  do número de grãos de trigo que se pode obter
 num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de trigo no primeiro quadro e nos
 quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro quadro coloca-se um grão, no segundo
 quadro colocam-se dois grãos (neste momento têm-se três grãos), no terceiro quadro colocam-se quatro
