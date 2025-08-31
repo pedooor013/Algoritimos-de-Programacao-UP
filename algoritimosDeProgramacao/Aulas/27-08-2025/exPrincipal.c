@@ -19,7 +19,13 @@ int main(){
     parar = 1;
     
     while(parar != 2){
-        numBimestre = 1;
+        numBimestre = 1;        
+        mediaAluno = 0;
+        somaTotal = 0;
+        notaTrabalho = 0;
+        notaProva = 0;
+        notaExame = 0;
+        nomeTurma = ""; 
         printf("\nDigite a letra da turma: \n");
         scanf("%s", &nomeTurma);
         
@@ -29,7 +35,6 @@ int main(){
         countAlunos = countAlunos + qntAlunos;
 
         alunos = realloc(alunos, countAlunos * sizeof(struct Aluno));
-
 
         for(int count = 0; count < qntAlunos; count++){
             printf("\n===Notas aluno===\n");
@@ -108,7 +113,6 @@ int main(){
     for(int i = 0; i < countAlunos; i++){
         printf("Turma: %c; Media: %.2f; Aprovacao: %19s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
     }
-
 
     return 0;
 }
