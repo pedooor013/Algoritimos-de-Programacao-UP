@@ -25,18 +25,21 @@ int main(){
         notaTrabalho = 0;
         notaProva = 0;
         notaExame = 0;
-        nomeTurma = ""; 
+        nomeTurma = ' '; 
         printf("\nDigite a letra da turma: \n");
-        scanf("%s", &nomeTurma);
+        scanf(" %c", &nomeTurma);
         
         printf("\nDigite a quantidade de alunos: \n");
         scanf("%d", &qntAlunos);
 
-        countAlunos = countAlunos + qntAlunos;
+        
+        int inicioContagem = countAlunos;
+        
+        countAlunos +=  qntAlunos;
 
         alunos = realloc(alunos, countAlunos * sizeof(struct Aluno));
 
-        for(int count = 0; count < qntAlunos; count++){
+        for(int count = inicioContagem; count < countAlunos; count++){
             printf("\n===Notas aluno===\n");
             //Calculo de notas dos 4 bimestres
             while(numBimestre <= 4){
@@ -71,7 +74,7 @@ int main(){
                 if(mediaAluno >= 6.75){
                     alunos[count].turma = nomeTurma;
                     alunos[count].media = mediaAluno;
-                    strcpy(alunos[count].statusAprovacao, "\nAprovado!\n");
+                    strcpy(alunos[count].statusAprovacao, "Aprovado!");
 
                 }else if(mediaAluno > 4 && mediaAluno < 6.75){
                     printf("\nNecessario fazer exame...\n");
@@ -111,7 +114,7 @@ int main(){
     printf("\n===Lista de Alunos===\n");
     
     for(int i = 0; i < countAlunos; i++){
-        printf("Turma: %c; Media: %.2f; Aprovacao: %19s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
+        printf("Turma: %c; Media: %.2f; Aprovacao: %s\n", alunos[i].turma, alunos[i].media, alunos[i].statusAprovacao);
     }
 
     return 0;
