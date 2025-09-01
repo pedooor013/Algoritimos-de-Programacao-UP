@@ -3,7 +3,7 @@
 int main(){
 
     int quadradosXadrez = 64;
-    int count, graosTrigo, somaFinal;
+    double count, graosTrigo, somaFinal;
 
 
     count = 1;
@@ -12,14 +12,14 @@ int main(){
 
     while(count <= quadradosXadrez){
 
-        printf("\n%d quadrado tem %d graos de trigo\n", quadradosXadrez, graosTrigo);
+        printf("\n%.0f quadrado tem %.0f graos de trigo\n", count, graosTrigo);
         
         somaFinal = somaFinal + graosTrigo;
         graosTrigo = graosTrigo*2;
         
         count++;
     }
-    printf("\nTemos %d graos de trigo no tabuleiro\n", graosTrigo);
+    printf("\nTemos %.0f graos de trigo no tabuleiro\n", somaFinal);
 
     return 0;
 }
