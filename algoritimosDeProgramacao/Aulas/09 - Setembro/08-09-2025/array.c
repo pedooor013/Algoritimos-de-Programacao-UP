@@ -13,6 +13,7 @@ int main(){
 */
 int result = 0;
 int index = 0;
+
     do{
         printf("\nDigite uma idade: \n");
         scanf("%d", &idades[index]);
@@ -23,12 +24,14 @@ int index = 0;
     index = 0;
 
     printf("\nExibicao das notas, primeira até a ultima: \n");
+    
     while(index < count){
         printf("\nIdade: %d \n", idades[index]);
         index++;
     }
 
     printf("\nExibicao das notas, ultima até a primeira: \n");
+
     while(index > 0){
         index--;
         printf("\nIdade: %d \n", idades[index]);
