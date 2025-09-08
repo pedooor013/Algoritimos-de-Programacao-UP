@@ -20,6 +20,7 @@ Apresentar os elementos da matriz C.
 cada que sejam do tipo real. Construir uma matriz D, sendo esta o resultado da junção das três matrizes (A,
 B e C). Desta forma, a matriz D deve ter o triplo de elementos das matrizes A, B e C, ou seja, 15 elementos.
 Apresentar os elementos da matriz D.
+
 Usando a estrutura de MATRIZES
 
 06) Elaborar um programa que leia duas matrizes A e B, cada uma de duas dimensões com cinco linhas e três
