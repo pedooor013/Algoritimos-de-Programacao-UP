@@ -1,0 +1,46 @@
+Usando a estrutura de VETORES
+
+01) Elaborar um programa que efetue a leitura de dez nomes de pessoas em uma matriz A do tipo vetor e
+apresentá-los em seguida.
+
+02) Escrever um programa que leia duas matrizes A e B do tipo vetor com 20 elementos reais. Construir uma
+matriz C, sendo cada elemento da matriz C a subtração de um elemento correspondente da matriz A com
+um elemento correspondente da matriz B. Ao final, apresentar os elementos da matriz C.
+
+03) Elaborar um programa que leia uma matriz A do tipo vetor com 15 elementos inteiros. Construir uma matriz
+B de mesmo tipo, e cada elemento da matriz B deve ser o resultado da fatorial correspondente de cada
+elemento da matriz A. Apresentar as matrizes A e B.
+
+04) Elaborar um programa que leia duas matrizes do tipo vetor para o armazenamento de nomes de pessoas,
+sendo a matriz A com 20 elementos e a matriz B com 30 elementos. Construir uma matriz C, sendo esta a
+junção das matrizes A e B. Desta forma, a matriz C deve ter a capacidade de armazenar 50 elementos.
+Apresentar os elementos da matriz C.
+
+05) Escrever um programa que leia três matrizes (A, B e C) de uma dimensão do tipo vetor com cinco elementos
+cada que sejam do tipo real. Construir uma matriz D, sendo esta o resultado da junção das três matrizes (A,
+B e C). Desta forma, a matriz D deve ter o triplo de elementos das matrizes A, B e C, ou seja, 15 elementos.
+Apresentar os elementos da matriz D.
+Usando a estrutura de MATRIZES
+
+06) Elaborar um programa que leia duas matrizes A e B, cada uma de duas dimensões com cinco linhas e três
+colunas para valores inteiros. Construir uma matriz C de mesma dimensão, que seja formada pela soma
+dos elementos da matriz A com os elementos da matriz B. Apresentar os elementos da matriz C.
+
+07) Elaborar um programa que leia duas matrizes A e B cada uma com uma dimensão para 12 elementos reais.
+Construir uma matriz C de duas dimensões, sendo a primeira coluna da matriz C formada pelos elementos
+da matriz A multiplicados por 2 e a segunda coluna formada pelos elementos da matriz B subtraídos de 5.
+Apresentar separadamente as matrizes.
+
+08) Elaborar um programa que leia uma matriz A de duas dimensões com quatro linhas e cinco colunas,
+armazenando nessa matriz os valores das temperaturas em graus Celsius. Construir a matriz B de mesma
+dimensão, em que cada elemento seja o valor da temperatura em graus Fahrenheit de cada elemento
+correspondente da matriz A. Apresentar ao final as matrizes A e B.
+
+09) Elaborar um programa que leia uma matriz A do tipo inteira de duas dimensões com sete linhas e sete
+colunas. Construir a matriz B de mesma dimensão em que cada elemento seja o somatório de 1 até o valor
+armazenado na posição da matriz A, com exceção dos valores situados nos índices ímpares da diagonal
+principal (B[1,1]; B[3,3]; 8[5,5] e 8[7,7]), os quais devem ser o fatorial de cada elemento correspondente da
+matriz A. Apresentar ao final a matriz B.
+
+10) Elaborar um programa que leia uma matriz A do tipo real de duas dimensões com quatro linhas e quatro
+colunas. Apresentar o somatório dos elementos situados na diagonal principal da referida matriz.
