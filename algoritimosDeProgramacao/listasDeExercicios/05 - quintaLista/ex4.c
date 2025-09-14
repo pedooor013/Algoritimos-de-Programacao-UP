@@ -6,27 +6,35 @@ Apresentar os elementos da matriz C.
  */
 
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
-    char arrayNomesUm[3][20], arrayNomesDois[2][20], arrayNomesTotal[5][20];
+    char arrayNomesUm[20][20], arrayNomesDois[30][20], arrayNomesTotal[50][20];
     int index = 0;
 
-    while(index < 3){
+    while(index < 20){
         printf("\nDigite um nome:\n");
-        scanf("%s", &arrayNomesUm[index][20]);
-        arrayNomesTotal[index][20] = arrayNomesUm[index][20];
-        index++;
-    }
-    while(index < 5){
-        printf("\nDigite um nome:\n");
-        scanf("%s", &arrayNomesDois[index][20]);
-        arrayNomesTotal[index][20] = arrayNomesDois[index][20];
+        scanf("%19s", arrayNomesUm[index]);
         index++;
     }
 
-    for(int contadorDeNomes = 0; contadorDeNomes < 5; contadorDeNomes++){
-        printf("%d - %s", contadorDeNomes, arrayNomesTotal[contadorDeNomes]);
+    index = 0;
+
+    while(index < 30){
+        printf("\nDigite um nome:\n");
+        scanf("%19s", arrayNomesDois[index]);
+        index++;
     }
-    
+
+    for(int contadorDeNomes = 0; contadorDeNomes < 20; contadorDeNomes++){
+        strcpy(arrayNomesTotal[contadorDeNomes], arrayNomesUm[contadorDeNomes]);
+        printf("\n%d - %s", contadorDeNomes+1, arrayNomesTotal[contadorDeNomes]);
+    }
+    for(int contadorDeNomes = 0; contadorDeNomes < 30; contadorDeNomes++){
+        strcpy(arrayNomesTotal[contadorDeNomes + 20], arrayNomesDois[contadorDeNomes]);
+        printf("\n%d - %s", contadorDeNomes + 20, arrayNomesTotal[contadorDeNomes + 20]);
+    }
+
+    return 0;
 }
