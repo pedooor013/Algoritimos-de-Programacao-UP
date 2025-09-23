@@ -1,36 +1,42 @@
 #include <stdio.h>
+#include <string.h>
+
 
 int main(){
 
-    char nomeUser[100], nomeUserDois[100], nomeUserInvertido[100], caracterNulo = '\0';
+    int qntDeUsuariosFixo = 0, contadorUsuarios;
 
-    int contadorDeCaracteres = 0, count = 0;
+    printf("\nDigite quantos usuarios voce quer usar: \n");
+    scanf("%d", &qntDeUsuariosFixo);
+    getchar();
 
-    printf("Digite seu nome completo: \n");
-    gets(nomeUser);
+    char nomeUser[qntDeUsuariosFixo][100], nomeUserInvertido[qntDeUsuariosFixo][100], caracterNulo = '\0';
+    
+    int contadorDeCaracteres[qntDeUsuariosFixo];
+    
+    for(contadorUsuarios = 0; contadorUsuarios < qntDeUsuariosFixo; contadorUsuarios++){
+
+    contadorDeCaracteres[contadorUsuarios] = 0;
+
+    printf("Digite o %d nome completo: \n", contadorUsuarios+1);
+    fgets(nomeUser[contadorUsuarios], 100, stdin);
 
     do{
-        contadorDeCaracteres++;
-    }while(nomeUser[contadorDeCaracteres] != caracterNulo);
-
-    for(count = 0; count <= contadorDeCaracteres; count++){
-        printf("%c", nomeUser[count]);
-        nomeUserDois[count] = nomeUser[count];
-    }
+        contadorDeCaracteres[contadorUsuarios]++;
+    }while(nomeUser[contadorUsuarios][contadorDeCaracteres[contadorUsuarios]] != caracterNulo);
 
     
-    for(int i = 0; i < contadorDeCaracteres; i++){
-        nomeUserInvertido[i] = nomeUser[contadorDeCaracteres - 1 - i];
+    for(int i = 0; i < contadorDeCaracteres[contadorUsuarios]; i++){
+        nomeUserInvertido[contadorUsuarios][i] = nomeUser[contadorUsuarios][contadorDeCaracteres[contadorUsuarios] - 1 - i];
     }
-    nomeUserInvertido[contadorDeCaracteres] = '\0';
-
+    nomeUserInvertido[contadorUsuarios][contadorDeCaracteres[contadorUsuarios]] = '\0';
     
-
-    printf("\nEsse eh o segundo array %s e esse eh o primeiro %s \n", nomeUserDois, nomeUser);
-    printf("\nE esse eh o invertido: %s", nomeUserInvertido);
-    printf("\nE contem %d caracteres!", contadorDeCaracteres);
-
-    /* printf("\n%s contem %d caracteres\n",nomeUser, contadorDeCaracteres);*/
-
-    return 0;
+}
+for(int count = 0; count < qntDeUsuariosFixo; count++){
+    printf("%d nome:\n", count);
+    printf("\nEsse foi o nome digitado: %s", nomeUser[count]);
+    printf("\nE esse eh o invertido: %s", nomeUserInvertido[count]);
+    printf("\nE contem %d caracteres!\n\n", contadorDeCaracteres[count]);
+}
+return 0;
 }
