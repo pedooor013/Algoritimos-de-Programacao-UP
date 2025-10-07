@@ -23,12 +23,11 @@ int main(){
     }
     for(int count = 0; count < 5; count++){
         printf("\n\n%d produto:\n", count+1);        
-        printf("Cod: %d\n", produtos[count].codigo);
+        pr0intf("Cod: %d\n", produtos[count].codigo);
         printf("Nome: %s\n", produtos[count].nome);
         printf("Cat: %c\n", produtos[count].categoria);
         printf("Cod: %lf\n", produtos[count].valor);
         printf("====================================");
     }
-
     return 0;
 }
